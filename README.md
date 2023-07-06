@@ -1,13 +1,11 @@
 <h1 align="center">Hi 👋, I'm Omar Ayman</h1>
 <h3 align="center">A passionate software engineer</h3>
 
-- 🔭 I’m currently working on **EduTools**
+- 🔭 I’m currently working on **EduTools and Touch Of Life website**
 
 - 🌱 I’m currently learning **Reinforcement learning**
 
-- 👯 I’m looking to collaborate on **EduTools**
-
-- 🤝 I’m looking for help with **EduTools**
+- 🤝 I’m looking to collaborate on **Touch of Life Website**
 
 - 💬 Ask me about **C++ , DSA**
 
