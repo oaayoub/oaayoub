@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Omar Ayman</h1>
+<h1 align="center">Hi 👋, I'm Omar Ayman</h1> 
 <h3 align="center">A passionate software engineer</h3>
 
 - 🔭 I’m currently working on **EduTools and Touch Of Life website**
