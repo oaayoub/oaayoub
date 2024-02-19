@@ -4,7 +4,7 @@ on:
     types: [submitted]
 
 jobs:
-  approved:
+  PR_got_reviwed:
     runs-on: ubuntu-latest
     steps:
       - name: Check PR approval status
