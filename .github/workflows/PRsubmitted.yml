@@ -10,8 +10,18 @@ jobs:
     if: github.event.review.state == 'APPROVED'
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This PR was approved"
-    if: github.event.review.state != 'APPROVED'
+      - run: echo "This PR was approved 🙌"
+    if: github.event.review.state == 'REQUEST_CHANGES'
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This PR was declined"
+      - name: Check PR approval status
+        if: github.event.review.state == 'APPROVED'
+        run: echo "This PR was approved"
+
+      - name: Check PR rejection status
+        if: github.event.review.state == 'CHANGES_REQUESTED'
+        run: echo "This PR was requested to make changes"
+
+      - name: Check PR comment status
+        if: github.event.review.state == 'COMMENTED'
+        run: echo "This PR was commented"
