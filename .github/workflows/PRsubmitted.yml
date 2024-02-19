@@ -1,0 +1,17 @@
+# This is a basic workflow to help you get started with Actions
+
+name: N-Omar-Trial-Linking-With-GH-approved
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  approved:
+    if: github.event.review.state == 'APPROVED'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This PR was approved"
+    if: github.event.review.state != 'APPROVED'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This PR was declined"
