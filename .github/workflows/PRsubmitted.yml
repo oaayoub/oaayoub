@@ -9,7 +9,10 @@ jobs:
     steps:
       - name: Check PR approval status
         if: github.event.review.state == 'APPROVED'
-        run: echo "This PR was approved"
+        run: echo "This PR was approved🤟"
       - name: Check PR rejection status
-        if: github.event.review.state != 'APPROVED'
-        run: echo "This PR was declined"
+        if: github.event.review.state == 'CHANGES_REQUESTED'
+        run: echo "This PR was declined 🥹"
+      - name: Check PR Commented status
+        if: github.event.review.state == 'COMMENTED'
+        run: echo "This PR was COMMENTED warm"
